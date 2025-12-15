@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <input type="checkbox" id="toggle">
+            <h2>Taskify</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <div class="sort-buttons">
+                <button id="sortAsc" onclick="sortAscending()">Ascending</button>
+                <button id="sortDes" onclick="sortDescending()">Descending</button>
+                <button id="sortRes" onclick="resetOrder()">Reset</button>
+            </div>
+            <ul id="list-container"></ul>
+            <div class="taskCounters">
+                Total Tasks: <span id="totalCount">0</span> | Completed Tasks: <span id="completedCount">0</span>
+            </div> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
